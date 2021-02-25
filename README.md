@@ -14,9 +14,9 @@ SR1                 Strawberries    £5.00
 CF1                 Coffee          £11.23
 ```
 
-Our CEO is a big fan of **buy-one-get-one-free offers of fruit tea**. He wants us to add a rule to do this.
+Our CEO is a big fan of ***buy-one-get-one-free offers of fruit tea***. He wants us to add a rule to do this.
 
-The COO, though, likes low prices and wants people buying strawberries to get a price discount for bulk purchases. **If you buy 3 or more strawberries, the price of each unit should drop to £4.50**.
+The COO, though, likes low prices and wants people buying strawberries to get a price discount for bulk purchases. ***If you buy 3 or more strawberries, the price of each unit should drop to £4.50***.
 
 Our check-out can scan items in any order, and because the CEO and COO change their minds often, it needs to be flexible regarding our pricing rules.
 
