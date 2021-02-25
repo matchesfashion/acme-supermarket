@@ -23,12 +23,12 @@ Our check-out can scan items in any order, and because the CEO and COO change th
 The interface to our basket looks like this (shown in JavaScript):
 
 ```javascript
-  const basket = new Basket(pricingRules);
+const basket = new Basket(pricingRules);
 
-  basket.add(item);
-  basket.add(item);
+basket.add(item);
+basket.add(item);
 
-  const price = basket.total();
+const price = basket.total();
 ```
 
 Implement a basket system that fulfills these requirements in JavaScript or TypeScript.
