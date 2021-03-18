@@ -6,13 +6,11 @@ Create a solution for the ACME Supermarket problem.
 
 ACME's quest for global domination has prompted us to open a supermarket – we sell only three products:
 
-```plaintext
-Product code        Name            Price
-
-FR1                 Fruit tea       £3.11
-SR1                 Strawberries    £5.00
-CF1                 Coffee          £11.23
-```
+| Product Code | Name | Price |
+| --- | --- | --- |
+| `FR1` | Fruit tea | £3.11 |
+| `SR1` | Strawberries | £5.00 |
+| `CF1` | Coffee | £11.23 |
 
 Our CEO is a big fan of ***buy-one-get-one-free offers of fruit tea***. He wants us to add a rule to do this.
 
@@ -31,9 +29,9 @@ basket.add(item);
 const price = basket.total();
 ```
 
-Implement a basket system that fulfills these requirements in JavaScript or TypeScript.
+Implement a basket system that fulfills these requirements in TypeScript or JavaScript.
 
-Test Data:
+## Test Data
 
 ```plaintext
 Basket: FR1, SR1, FR1, CF1
