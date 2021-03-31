@@ -1,38 +1,31 @@
 # ACME Supermarket
 
-Create a solution for the ACME Supermarket problem.
+Build a client-side interactive shopping basket.
 
-## Description of the problem
+The application should allow you to add the following products to your basket:
 
-ACME's quest for global domination has prompted us to open a supermarket – we sell only three products:
+| Product Code | Name | Price |
+| --- | --- | --- |
+| `FR1` | Fruit tea | £3.11 |
+| `SR1` | Strawberries | £5.00 |
+| `CF1` | Coffee | £11.23 |
 
-    Product code        Name            Price
+The basket should automatically apply the following promotions:
 
-    FR1                 Fruit tea       £ 3.11
-    SR1                 Strawberries    £ 5.00
-    CF1                 Coffee          £11.23
+- Buy-one-get-one-free for Fruit Tea
+- Buy three or more Strawberries and the unit price drops to £4.50
 
-Our CEO is a big fan of buy-one-get-one-free offers and of fruit tea. He wants us to add a rule to do this.
+The user should be able to see all the items in their basket and the basket total. Items should animate in when added to the basket.
 
-The COO, though, likes low prices and wants people buying strawberries to get a price discount for bulk purchases. If you buy 3 or more strawberries, the price should drop to £4.50.
-Our check-out can scan items in any order, and because the CEO and COO change their minds often, it needs to be flexible regarding our pricing rules.
+## Test Data
 
-The interface to our basket looks like this (shown in JavaScript):
+```
+Basket: FR1, SR1, FR1, CF1
+Total price expected: £19.34
 
-    var basket = new Basket(pricingRules)
-    basket.add(item)
-    basket.add(item)
-    var price = basket.total()
+Basket: FR1, FR1
+Total price expected: £3.11
 
-Implement a basket system that fulfills these requirements in JavaScript.
-
-Test Data:
-
-    Basket: FR1, SR1, FR1, CF1
-    Total price expected: £19.34
-
-    Basket: FR1, FR1
-    Total price expected: £3.11
-
-    Basket: SR1, SR1, FR1, SR1
-    Total price expected: £16.61
+Basket: SR1, SR1, FR1, SR1
+Total price expected: £16.61
+```
