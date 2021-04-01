@@ -12,8 +12,8 @@ The application should allow you to add the following products to your basket:
 
 The basket should automatically apply the following promotions:
 
-- Buy-one-get-one-free for Fruit Tea
-- The unit price for Strawberries drops to £4.50 when there are three or more of them in the basket
+- Buy-one-get-one-free: applies only to Fruit Tea
+- Bulk-buy: the unit price for Strawberries drops to £4.50 when there are three or more of them in the basket
 
 The user should be able to see all the items in their basket and the basket total. Items should animate in when added to the basket.
 
