@@ -1,10 +1,8 @@
 # ACME Supermarket
 
-Create a solution for the ACME Supermarket problem.
+Build a client-side interactive shopping basket.
 
-## Description of the problem
-
-ACME's quest for global domination has prompted us to open a supermarket – we sell only three products:
+The application should allow you to add the following products to your basket:
 
 | Product Code | Name | Price |
 | --- | --- | --- |
@@ -12,28 +10,16 @@ ACME's quest for global domination has prompted us to open a supermarket – we 
 | `SR1` | Strawberries | £5.00 |
 | `CF1` | Coffee | £11.23 |
 
-Our CEO is a big fan of ***buy-one-get-one-free offers of fruit tea***. He wants us to add a rule to do this.
+The basket should automatically apply the following promotions:
 
-The COO, though, likes low prices and wants people buying strawberries to get a price discount for bulk purchases. ***If you buy 3 or more strawberries, the price of each unit should drop to £4.50***.
+- Buy-one-get-one-free: applies only to Fruit Tea
+- Bulk-buy: the unit price for Strawberries drops to £4.50 when there are three or more of them in the basket
 
-Our check-out can scan items in any order, and because the CEO and COO change their minds often, it needs to be flexible regarding our pricing rules.
-
-The interface to our basket looks like this (shown in JavaScript):
-
-```javascript
-const basket = new Basket(pricingRules);
-
-basket.add(item);
-basket.add(item);
-
-const price = basket.total();
-```
-
-Implement a basket system that fulfills these requirements in TypeScript or JavaScript.
+The user should be able to see all the items in their basket and the basket total. Items should animate in when added to the basket.
 
 ## Test Data
 
-```plaintext
+```
 Basket: FR1, SR1, FR1, CF1
 Total price expected: £19.34
 
